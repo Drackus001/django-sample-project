@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+  
+    HOME <br>
+    <a href="{% url 'home' %}">Home</a> | <a href="{% url 'about' %}">About</a>
+<!-- article -->
+<div class="container my-3">
+            
+        
+        <h3>Today's Deal</h3>
+          
+        <div class="row ">
+                
+            <a class="card col-md px-2"  href="index.html" >
+                  <!-- <img class="card-img-top p-2" src="img/samsung_image.jpg" alt="Card image cap"> -->
+                <div class="card-body">
+                  <div class="brand">  Samsung image </div>
+                    
+                    <p>Samsung image.</p>
+                </div>
+            </a>
+
+            <a class="card col-md  px-2" style="width: 10rem;" href="index.html">
+                <!-- <img class="card-img-top p-2" src="img/sonGear_image.jpg" alt="Card image cap"> -->
+                <div class="card-body">
+                    <p class="card-text">Sony Gear</p>
+                </div>
+            </a>
+            <div class="card col-md px-2" style="width: 10rem;">
+                <!-- <img class="card-img-top p-2" src="img/ubon_image.jpg" alt="Card image cap"> -->
+                <div class="card-body">
+                    <p class="card-text">ubon image</p>
+                </div>
+            </div>
+
+            <div class="card col-md px-2" style="width: 18rem;">
+                <!-- <img class="card-img-top p-2" src="img/Bovic_image.jpg" alt="Card image cap"> -->
+                <div class="card-body">
+                    <p class="card-text">card's content.</p>
+                </div>
+            </div>
+
+            <div class="card col-md px-2" style="width: 18rem;">
+                <!-- <img class="card-img-top p-2" src="img/jbl_j56_image.jpg" alt="Card image cap"> -->
+                <div class="card-body">
+                    <p class="card-text">card's content.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        </div>
+    <br><br><br>
+  
+{% endblock %}

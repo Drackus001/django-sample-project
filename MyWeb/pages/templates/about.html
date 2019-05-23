@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    ABOUT
+<br>
+    <a href="{% url 'home' %}">Home</a> | <a href="{% url 'about' %}">About</a>
+
+
+    {% for post in posts  %}
+        <hr>
+        <h2> {{ post.author }} </h2>
+        <h3> {{ post.title }} </h3>
+        <h3> {{ post.date_posted|date:"d-F-Y" }} </h3>
+        <h3> {{ post.content }} </h3>
+        
+    {% endfor %}
+
+{% endblock %}
